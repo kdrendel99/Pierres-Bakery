@@ -31,8 +31,8 @@ namespace PierresBakery.Models
 
     public int ApplyBogoDeal()
     {
-      //Change later to apply deal
-      return 1;
+      Amount = Convert.ToInt32(Math.Ceiling(Amount/.66));
+      return Amount;
     }
   }
 }
