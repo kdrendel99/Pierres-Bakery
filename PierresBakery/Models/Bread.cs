@@ -18,7 +18,12 @@ namespace PierresBakery.Models
       get {return Amount * 5;}
     }
 
-    public bool BogoDeal ()
+    public bool CheckTwo()
+    {
+      return false;
+    }
+
+    public bool BogoDeal()
     {
       if (TotalCost % 2 == 0)
       {

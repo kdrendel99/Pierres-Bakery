@@ -30,5 +30,13 @@ namespace PierresBakery.Tests
       Bread newBread = new Bread(4);
       Assert.AreEqual(true, newBread.BogoDeal());
     }
+
+    [TestMethod]
+
+    public void CheckTwo_CheckForAtLeastTwoLoafs_True()
+    {
+      Bread newBread = new Bread(2);
+      Assert.AreEqual(true, newBread.CheckTwo());
+    }
   }
 }
