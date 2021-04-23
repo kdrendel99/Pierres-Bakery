@@ -7,6 +7,7 @@ namespace PierresBakery.Models
   public class Bread
   {
     public int Amount { get; set; }
+
     public Bread(int amount)
     {
       Amount = amount;
@@ -14,8 +15,13 @@ namespace PierresBakery.Models
 
     public int TotalCost
     {
+    //   set {TotalCost = value * 5;}
+    //   get {}
+      
+
+      // Below is the code that works
       get {return Amount * 5;}
-      // set {;}
+      set {;}
     }
 
     public bool CheckTwo()
@@ -46,12 +52,16 @@ namespace PierresBakery.Models
     {
       if (CheckTwo())
       {
-        Amount = Convert.ToInt32(Math.Floor(Amount/.66));
-        return Amount;
+
+        int NewTotalCost = Convert.ToInt32(Math.Ceiling(Amount/1.5));
+        return NewTotalCost;
+
+        // Amount = Convert.ToInt32(Math.Floor(Amount/.66));
+        // return Amount;
       }
       else
       {
-        return 0;
+        return Amount;
       }
     }
   }
