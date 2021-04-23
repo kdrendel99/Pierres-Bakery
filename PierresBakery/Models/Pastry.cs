@@ -16,5 +16,10 @@ namespace PierresBakery.Models
     {
       get {return Amount * 5;}
     }
+
+    public bool BogoDeal()
+    {
+      return false;
+    }
   }
 }
