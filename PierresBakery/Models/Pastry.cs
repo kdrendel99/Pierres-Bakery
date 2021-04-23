@@ -14,7 +14,7 @@ namespace PierresBakery.Models
 
     public int TotalCost
     {
-      get {return Amount;}
+      get {return Amount * 5;}
     }
   }
 }
