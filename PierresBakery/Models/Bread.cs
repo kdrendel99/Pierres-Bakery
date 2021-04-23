@@ -20,7 +20,14 @@ namespace PierresBakery.Models
 
     public bool CheckTwo()
     {
-      return false;
+      if (Amount >= 2)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
 
     public bool BogoDeal()
