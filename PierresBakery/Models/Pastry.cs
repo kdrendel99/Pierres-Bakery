@@ -14,7 +14,7 @@ namespace PierresBakery.Models
 
     public int TotalCost
     {
-      get {return Amount * 5;}
+      get {return Amount * 2;}
     }
 
     public bool BogoDeal()
@@ -27,6 +27,12 @@ namespace PierresBakery.Models
       {
         return false;
       }
+    }
+
+    public int ApplyBogoDeal()
+    {
+      //Change later to apply deal
+      return 1;
     }
   }
 }

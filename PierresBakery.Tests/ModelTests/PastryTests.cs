@@ -20,7 +20,7 @@ namespace PierresBakery.Tests
     public void GetPastry_ReturnsPriceforAmount_Int()
     {
       Pastry newPastry = new Pastry(1);
-      int result = 5;
+      int result = 2;
       Assert.AreEqual(newPastry.TotalCost,result);
     }
 
@@ -30,6 +30,14 @@ namespace PierresBakery.Tests
     {
       Pastry newPastry = new Pastry(6);
       Assert.AreEqual(true, newPastry.BogoDeal());
+    }
+
+    [TestMethod]
+
+    public void ApplyBogoDeal_ApplyBogoDiscountToTotalPrice_Int()
+    {
+      Pastry newPastry = new Pastry(6);
+      Assert.AreEqual(newPastry.ApplyBogoDeal(),10);
     }
   }
 }
