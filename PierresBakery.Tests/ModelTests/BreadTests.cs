@@ -27,7 +27,7 @@ namespace PierresBakery.Tests
 
     public void BogoDeal_CheckForFreeLoaf_True()
     {
-      Bread newBread = new Bread(2);
+      Bread newBread = new Bread(4);
       Assert.AreEqual(true, newBread.BogoDeal());
     }
   }

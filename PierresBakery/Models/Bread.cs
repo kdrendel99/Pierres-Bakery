@@ -20,7 +20,14 @@ namespace PierresBakery.Models
 
     public bool BogoDeal ()
     {
-      return false;
+      if (TotalCost % 2 == 0)
+      {
+        return true;
+      }
+      else 
+      {
+        return false;
+      }
     }
   }
 }
