@@ -41,5 +41,18 @@ namespace PierresBakery.Models
         return false;
       }
     }
+
+    public int ApplyBogoDeal()
+    {
+      if (CheckTwo())
+      {
+        //apply discount here (checking functionality temporarily below)
+        return 0;
+      }
+      else
+      {
+        return 1;
+      }
+    }
   }
 }

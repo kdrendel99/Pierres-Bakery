@@ -38,5 +38,13 @@ namespace PierresBakery.Tests
       Bread newBread = new Bread(2);
       Assert.AreEqual(true, newBread.CheckTwo());
     }
+
+    [TestMethod]
+
+    public void ApplyBogoDeal_ApplyBogoDiscountToTotalPrice_Int()
+    {
+      Bread newBread = new Bread(7);
+      Assert.AreEqual(newBread.ApplyBogoDeal(),10);
+    }
   }
 }
