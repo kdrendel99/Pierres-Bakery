@@ -6,14 +6,16 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    private int Amount;
-    private int Cost;
+    public int Amount { get; set; }
 
-    public Bread(int amount,int cost)
+    public Bread(int amount)
     {
       Amount = amount;
-      Cost = cost;
     }
-    // properties, constructors, methods, etc. go here
+
+    public int TotalCost
+    {
+      get {return Amount;}
+    }
   }
 }
