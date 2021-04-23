@@ -17,21 +17,9 @@ namespace PierresBakery.Models
       get {return Amount * 2;}
     }
 
-    public bool BogoDeal()
-    {
-      if (TotalCost % 3 == 0)
-      {
-        return true;
-      }
-      else 
-      {
-        return false;
-      }
-    }
-
     public int ApplyBogoDeal()
     {
-      Amount = Convert.ToInt32(Math.Ceiling(Amount/.66));
+      Amount = Convert.ToInt32(Math.Ceiling(Amount*1.66));
       return Amount;
     }
   }

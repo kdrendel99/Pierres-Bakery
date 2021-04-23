@@ -36,18 +36,6 @@ namespace PierresBakery.Models
       }
     }
 
-    public bool BogoDeal()
-    {
-      if (TotalCost % 2 == 0)
-      {
-        return true;
-      }
-      else 
-      {
-        return false;
-      }
-    }
-
     public int ApplyBogoDeal()
     {
       if (CheckTwo())
@@ -55,13 +43,10 @@ namespace PierresBakery.Models
 
         int NewTotalCost = Convert.ToInt32(Math.Ceiling(Amount/1.5));
         return NewTotalCost;
-
-        // Amount = Convert.ToInt32(Math.Floor(Amount/.66));
-        // return Amount;
       }
       else
       {
-        return Amount;
+        return TotalCost;
       }
     }
   }
