@@ -24,17 +24,17 @@ namespace PierresBakery.Tests
       Assert.AreEqual(newPastry.TotalCost,result);
     }
 
+    // [TestMethod]
+
+    // public void BogoDeal_CheckForThreePastryDiscount_True()
+    // {
+    //   Pastry newPastry = new Pastry(6);
+    //   Assert.AreEqual(true, newPastry.BogoDeal());
+    // }
+
     [TestMethod]
 
-    public void BogoDeal_CheckForThreePastryDiscount_True()
-    {
-      Pastry newPastry = new Pastry(6);
-      Assert.AreEqual(true, newPastry.BogoDeal());
-    }
-
-    [TestMethod]
-
-    public void ApplyBogoDeal_GetTotalAmountForPayingPrice_Int()
+    public void ApplyBogoDeal_GetTotalForAmount_Int()
     {
       Pastry newPastry = new Pastry(6);
       Assert.AreEqual(newPastry.ApplyBogoDeal(),10);

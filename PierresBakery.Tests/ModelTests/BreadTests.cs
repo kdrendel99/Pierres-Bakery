@@ -23,13 +23,13 @@ namespace PierresBakery.Tests
       Assert.AreEqual(newBread.TotalCost,result);
     }
 
-    [TestMethod]
+    // [TestMethod]
 
-    public void BogoDeal_CheckForFreeLoaf_True()
-    {
-      Bread newBread = new Bread(4);
-      Assert.AreEqual(true, newBread.BogoDeal());
-    }
+    // public void BogoDeal_CheckForFreeLoaf_True()
+    // {
+    //   Bread newBread = new Bread(4);
+    //   Assert.AreEqual(true, newBread.BogoDeal());
+    // }
 
     [TestMethod]
 
@@ -38,14 +38,6 @@ namespace PierresBakery.Tests
       Bread newBread = new Bread(2);
       Assert.AreEqual(true, newBread.CheckTwo());
     }
-
-    // [TestMethod]
-
-    // public void ApplyBogoDeal_GetTotalPriceForAmount_Int()
-    // {
-    //   Bread newBread = new Bread(4);
-    //   Assert.AreEqual(newBread.ApplyBogoDeal(),15);
-    // }
 
     [TestMethod]
 
