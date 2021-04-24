@@ -41,7 +41,8 @@ namespace PierresBakery.Models
       if (CheckTwo())
       {
 
-        int NewTotalCost = Convert.ToInt32(Math.Ceiling(Amount/1.5));
+        int QuantityPaidForAfterDiscount = Convert.ToInt32(Math.Ceiling(Amount/1.5));
+        int NewTotalCost = QuantityPaidForAfterDiscount * 5;
         return NewTotalCost;
       }
       else
