@@ -35,8 +35,8 @@ namespace PierresBakery.Tests
 
     public void ApplyBogoDeal_GetTotalPriceForAmount_Int()
     {
-      Bread newBread = new Bread(5);
-      Assert.AreEqual(newBread.ApplyBogoDeal(),4);
+      Bread newBread = new Bread(1);
+      Assert.AreEqual(newBread.ApplyBogoDeal(),5);
     }
 
 
