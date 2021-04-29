@@ -45,9 +45,13 @@ _Collect user input in a console-based application in order to perform calculati
 
 * _Enter 'dotnet restore' into terminal and press enter_
 
-* _Navigate back to Pierres-Bakery.Solutions, and then into PierresBakery_
+* _To confirm project tests are still passing, enter dotnet test into the terminal in current directory._
 
-* _Enter 'dotnet run' into terminal, and run the project._
+* _Navigate back to Pierres-Bakery.Solutions, and enter dotnet build in the terminal. Press enter._
+
+* _Navigate into PierresBakery, and enter 'dotnet run' into terminal, and run the project._
+
+
 
 ## Known Bugs <a id="bugs"></a>
 * _After invalid inputs are entered, the project navigates the user back to the top of the Main() method. Doing so doesn't clear the memory caches, and if the user continues to run the project until checkout, the first "order" (even if empty) will also appear in the order summary._
